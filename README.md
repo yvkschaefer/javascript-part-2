@@ -1,5 +1,4 @@
-# javascript-part-2
-JavaScript part 2: functions and objects
+# JavaScript part 2: functions and objects
 
 * If you haven’t finished the previous assignment (excluding the challenges part), complete this first.
 * Fork this repository and create a new Cloud9 project based on it.
@@ -18,7 +17,7 @@ var sum = adder(5, 10); //15
 var multiplier = operationMaker(“mult”);
 var product = mult(5, 10); // 50
 ```
-* Create a branch called `warriors`. Inside, create a file called `warriors.js`, and put a comment inside the file. Add/commit/push it and create a pull request for this branch. Then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request. Don't hesitate to commit mistakes or incomplete code. When you think you are done, **add a label to the pull request on GitHub** called "ready for review". This will notify us to check your code.
+* Create a branch called `warriors`. Inside, create a file called `warriors.js`, and put a comment inside the file. Add/commit/push it and create a pull request for this branch. Then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request. Don't hesitate to commit mistakes or incomplete code.
   * Create a constructor function called `Warrior` that can create new warriors. This function will take parameters `name`, and `gender`. `name` can be any string, `gender` can be `M` or `F`. It should create a warrior that has these properties:
     * `name`: the value that was passed to the constructor
     * `gender`: the value that was passed to the constructor
