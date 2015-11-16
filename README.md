@@ -42,4 +42,8 @@ var product = mult(5, 10); // 50
   * Output the map to the console in the following way:
     * For each tile, output the height of the tile as an "icon" for that tile
   * Go thru all the map again, randomly burning and freezing some tiles. Then, re-output the map in the same way again
-* Complete the following activity: http://reactivex.io/learnrx/
+
+## When you are done
+When you are done with the previous exercises, start the activity below. You may not finish it. The last few exercises are quite challenging ;)
+
+[Functional programming in JavaScript](http://reactivex.io/learnrx/)
