@@ -2,7 +2,10 @@
 
 * If you haven’t finished the previous assignment (excluding the challenges part), complete this first.
 * Fork this repository and create a new Cloud9 project based on it.
-* In this new project, create a branch called `functions`. Create a file called `functions.js`, put a line of comment inside of it, add/commit/push it, and create a pull request for this branch. Then, do the following. Each of these questions should be followed by a commit. This way, your PR will be updated and we can correct it.
+
+Functions
+---------
+* Create a file called `functions.js`. Then, do the following:
   * Read about the [`Array.prototype.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method. Create a function that can be used with `sort`. This function should take two strings, and return a value that sort can use to determine which is the longest string. Finally, create an array of strings and try to get it sorted using your new function.
   * Create an array of objects (don’t need to use `new` here, just regular object literals). These objects will contain a `name` and `email` property. Then, run some code that will sort your array by the longest name. Then, run some code that will sort your array by e-mail address in alphabetical order.
   * Create a function that can be used with [`Array.prototype.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). This function should take a number and return its square. Then, use this function with map on an array of numbers to check the result.
@@ -17,7 +20,12 @@ var sum = adder(5, 10); //15
 var multiplier = operationMaker(“mult”);
 var product = mult(5, 10); // 50
 ```
-* Create a branch called `warriors`. Inside, create a file called `warriors.js`, and put a comment inside the file. Add/commit/push it and create a pull request for this branch. Then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request. Don't hesitate to commit mistakes or incomplete code.
+
+* Once you are finished, commit and push your changes. Then, create a pull request so we can start checking your work.
+
+Objects
+-------
+* Create a file called `warriors.js`, then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request.
   * Create a constructor function called `Warrior` that can create new warriors. This function will take parameters `name`, and `gender`. `name` can be any string, `gender` can be `M` or `F`. It should create a warrior that has these properties:
     * `name`: the value that was passed to the constructor
     * `gender`: the value that was passed to the constructor
@@ -28,7 +36,9 @@ var product = mult(5, 10); // 50
     * `fight`: will output to the console: "<name> rushes to the arena with <his/her> <weapon>"
     * `faceoff`: faceoff takes one argument called `opponent`. Based on the `power` of each opponent, this method should output to the console which player won the fight based on their power. Be as creative as you like with the text of this method :)
   * Finally, create a bunch of warriors and make them fight together.
-* Create a branch called `terrain`. Inside, create a file called `terrain.js` and put a comment inside the file. Add/commit/push it and create a pull request for this branch. Then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request. Don't hesitate to commit mistakes or incomplete code. When you think you are done, **add a label to the pull request on GitHub** called "ready for review". This will notify us to check your code.
+
+
+* Create a file called `terrain.js`, then, do the following. Commit and push as often as you like so that we can monitor the progress of your code in the pull request.
   * Create a constructor function called `Tile` that can create new tiles. This function will take parameters `x` and `y` and create an object that has these properties:
     * `x`: the value that was passed to the constructor
     * `y`: the value that was passed to the constructor
@@ -43,7 +53,8 @@ var product = mult(5, 10); // 50
     * For each tile, output the height of the tile as an "icon" for that tile
   * Go thru all the map again, randomly burning and freezing some tiles. Then, re-output the map in the same way again
 
-## When you are done
+When you are done
+-----------------
 When you are done with the previous exercises, start the activity below. You may not finish it. The last few exercises are quite challenging ;)
 
 [Functional programming in JavaScript](http://reactivex.io/learnrx/)
