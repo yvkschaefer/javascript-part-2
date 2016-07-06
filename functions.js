@@ -104,9 +104,7 @@ console.log(returnSquare(myArray));
 /*Q4. Create a function that can be used with `Array.prototype.map`. This function should be able to 
 take an object and square its “num” property. Then, use this function with map on an array of 
 objects each containing a “num” property.*/
-
-
-
+/*
 var arrayObjectsABC = [{num: 2}, {num:8}, {num: 5}];
 
 function numSquared(obj) {
@@ -114,3 +112,58 @@ function numSquared(obj) {
 }
 
 console.log(arrayObjectsABC.map(numSquared));
+*/
+
+
+
+
+
+/*In a previous workshop, you had to create a function that took two numbers and an operation 
+(add, sub, mult, …) and returned the result of the operation on the two numbers. Here we are going 
+to do the same but at a higher order.*/ 
+
+/*Q5. Create a function called `operationMaker` that takes only a string called `operation` as 
+argument. This string could be `“add”`, `“subtract”`, `“mult”` or `“div”`. Your function will 
+**return a function** that will take two numbers and return the result of running operation on 
+these numbers. The end result should let me do something like this:
+    ```javascript
+var adder = operationMaker(“add”);
+var sum = adder(5, 10); //15
+
+var multiplier = operationMaker(“mult”);
+var product = mult(5, 10); // 50
+```*/
+
+function operationMaker(operation){
+    if (operation === 'add'){
+        return function(num1, num2){
+            return num1 + num2;
+        }
+    }
+    else if (operation === 'subtract'){
+        return function(num1, num2){
+            return num1 - num2;
+        }
+    }
+    else if (operation === 'mult'){
+        return function(num1, num2){
+            return num1 * num2;
+        }
+    }
+    else if (operation === 'div'){
+        return function(num1, num2){
+            return num1 / num2;
+        }
+    }
+    else {
+        return 0
+    }
+}
+var opAdd = operationMaker('add');
+var opSubt = operationMaker('subtract');
+var opMult = operationMaker('mult');
+var opDiv = operationMaker('div');
+
+console.log(opAdd(opMult(2,4),4)); //12
+console.log(opDiv(15,5)); //3
+console.log(opSubt(opAdd(2,2),3)); //1
