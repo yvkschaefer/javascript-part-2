@@ -28,7 +28,7 @@ console.log(birds.sort(sortString));
 These objects will contain a `name` and `email` property. Then, run some code that will sort your 
 array by the longest name. Then, run some code that will sort your array by e-mail address in 
 alphabetical order.*/
-
+/*
 var susan = {
     name: 'Susan Sharp',
     email: 'susharp@gmail.com'
@@ -76,3 +76,21 @@ console.log('thanks for sorting me by the longestName, now please sort me by the
 
 
 console.log(contacts.sort(emailSort)); //donkeykong@gmail.com, pgriffin@gmail.com, sesamepride@gmail.com, susharp@gmail.com
+*/
+
+
+
+
+/*Create a function that can be used with [`Array.prototype.map`]
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). 
+This function should take a number and return its square. Then, use this function with map on an 
+array of numbers to check the result.*/
+
+var myArray = [9, 121, 225];
+
+
+function returnSquare(arr){
+    return arr.map(Math.sqrt);
+}
+
+console.log(returnSquare(myArray));
