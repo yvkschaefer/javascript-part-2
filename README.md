@@ -6,15 +6,15 @@
 Functions
 ---------
 * Create a file called `functions.js`. Then, do the following:
-  * Read about the [`Array.prototype.sort`]
+  * Q1. Read about the [`Array.prototype.sort`]
     (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 
     method. Create a function that can be used with `sort`. This function should take two strings, 
     and return a value that sort can use to determine which is the longest string. Finally, create 
     an array of strings and try to get it sorted using your new function.
-  * Create an array of objects (don’t need to use `new` here, just regular object literals). These objects will contain a `name` and `email` property. Then, run some code that will sort your array by the longest name. Then, run some code that will sort your array by e-mail address in alphabetical order.
-  * Create a function that can be used with [`Array.prototype.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). This function should take a number and return its square. Then, use this function with map on an array of numbers to check the result.
-  * Create a function that can be used with `Array.prototype.map`. This function should be able to take an object and square its “num” property. Then, use this function with map on an array of objects each containing a “num” property.
-  * In a previous workshop, you had to create a function that took two numbers and an operation (add, sub, mult, …) and returned the result of the operation on the two numbers. Here we are going to do the same but at a higher order.
+  * Q2. Create an array of objects (don’t need to use `new` here, just regular object literals). These objects will contain a `name` and `email` property. Then, run some code that will sort your array by the longest name. Then, run some code that will sort your array by e-mail address in alphabetical order.
+  * Q3. Create a function that can be used with [`Array.prototype.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). This function should take a number and return its square. Then, use this function with map on an array of numbers to check the result.
+  * Q4. Create a function that can be used with `Array.prototype.map`. This function should be able to take an object and square its “num” property. Then, use this function with map on an array of objects each containing a “num” property.
+  * Q5. In a previous workshop, you had to create a function that took two numbers and an operation (add, sub, mult, …) and returned the result of the operation on the two numbers. Here we are going to do the same but at a higher order.
   Create a function called `operationMaker` that takes only a string called `operation` as argument. This string could be `“add”`, `“subtract”`, `“mult”` or `“div”`. Your function will **return a function** that will take two numbers and return the result of running operation on these numbers.
   The end result should let me do something like this:
     ```javascript
