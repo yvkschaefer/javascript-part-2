@@ -15,7 +15,7 @@
         opponent, this method should output to the console which player won the fight based on 
         their power. Be as creative as you like with the text of this method :)
   * Finally, create a bunch of warriors and make them fight together.*/
-  
+/*  
   var warriorPrototype = {
     name: null,
     gender: null,
@@ -62,3 +62,4 @@ var jasmine = Warrior('Jasmine', 'F');
 aladdin.fight();
 jasmine.fight();
 aladdin.faceoff(jasmine);
+*/
