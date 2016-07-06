@@ -1,3 +1,6 @@
+/* --------------------------------FUNCTIONS-------------------------------- */
+
+
 /*Q1. Create a function that can be used with `sort`. This function should take two strings, and return 
 a value that sort can use to determine which is the longest string. Finally, create an array of 
 strings and try to get it sorted using your new function.*/
@@ -133,7 +136,7 @@ var sum = adder(5, 10); //15
 var multiplier = operationMaker(“mult”);
 var product = mult(5, 10); // 50
 ```*/
-
+/*
 function operationMaker(operation){
     if (operation === 'add'){
         return function(num1, num2){
@@ -167,3 +170,4 @@ var opDiv = operationMaker('div');
 console.log(opAdd(opMult(2,4),4)); //12
 console.log(opDiv(15,5)); //3
 console.log(opSubt(opAdd(2,2),3)); //1
+*/
