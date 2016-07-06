@@ -81,11 +81,11 @@ console.log(contacts.sort(emailSort)); //donkeykong@gmail.com, pgriffin@gmail.co
 
 
 
-/*Create a function that can be used with [`Array.prototype.map`]
+/*Q3. Create a function that can be used with [`Array.prototype.map`]
 (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). 
 This function should take a number and return its square. Then, use this function with map on an 
 array of numbers to check the result.*/
-
+/*
 var myArray = [9, 121, 225];
 
 
@@ -94,3 +94,23 @@ function returnSquare(arr){
 }
 
 console.log(returnSquare(myArray));
+*/
+
+
+
+
+
+
+/*Q4. Create a function that can be used with `Array.prototype.map`. This function should be able to 
+take an object and square its “num” property. Then, use this function with map on an array of 
+objects each containing a “num” property.*/
+
+
+
+var arrayObjectsABC = [{num: 2}, {num:8}, {num: 5}];
+
+function numSquared(obj) {
+    return obj.num * obj.num;
+}
+
+console.log(arrayObjectsABC.map(numSquared));
