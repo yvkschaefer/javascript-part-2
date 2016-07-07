@@ -87,4 +87,4 @@ function Map(width, height){
     
 };
 
-console.log(Map());
+console.log(Map(12,15));
