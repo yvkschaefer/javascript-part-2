@@ -11,4 +11,32 @@
     that email object to the `emails` of the person.
   * Finally test your code by creating a person and giving them a home and work email.*/
  
+function Person(firstName, lastName){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.emails = [];
+};
 
+Person.prototype = {
+    addEmail: function(emailAddress, type){
+  this.emails.push(new Email(emailAddress, type))
+    }
+}
+
+function Email(address, type){
+    this.address = address;
+    if (type === 'work'){
+        this.type = 'work';
+    }
+    else if (type === 'home'){
+        this.type = 'home';
+    }
+    else {
+        this.type = 'other';
+    }
+}
+
+var bob = new Person('Bob', 'Jones');
+bob.addEmail('bobjones@gmail.com', 'work');
+bob.addEmail('bobsmithjones@gmail.com', 'home');
+console.log(bob);
