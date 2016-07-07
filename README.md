@@ -53,10 +53,10 @@ In this exercise, we're going to create a constructor for maps in a 2D game. A `
 
 To do this exercise, let's follow these steps:
 
-  * Q4. Create a constructor function called `Tile` that can create new tiles for our map. This function will take parameter `type` and create an object that has these properties:
+  * Create a constructor function called `Tile` that can create new tiles for our map. This function will take parameter `type` and create an object that has these properties:
     * `type`: whatever was passed to the `Tile` constructor function
   * The `Tile` objects should also have a method called `isWalkable`. This method should, using `this.type`, return `true` or `false` depending on whether the tile can be walked on. The function should return `true` if the type is "grass" or "sand". The function should return `false` if the type is anything else.
-  * Q5. Create a constructor function called `Map` that will generate a map. This function will take parameters `width` and `height` and create a map object with these properties:
+  * Create a constructor function called `Map` that will generate a map. This function will take parameters `width` and `height` and create a map object with these properties:
     * `width`: whatever was passed to the `Map` constructor function (should be an integer value)
     * `height`: whatever was passed to the `Map` constructor function (should be an integer value)
     * `tiles`: this property should be created as a 2D array of `Tile` objects *inside the constructor*. Using two nested `for` loops bound by `width` and `height` respectively, create `new Tile` objects and give them a **random** value for the `type`, between "grass", "sand" and "water".
